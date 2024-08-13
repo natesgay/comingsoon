@@ -33,7 +33,28 @@
             to { opacity: 1; }
         }
         .email {
+            color: #fff;
+            font-size: 0.8rem;
+            margin-top: 20px;
+            opacity: 0;
+            animation: fadeIn 6s ease-in-out forwards;
+            animation-delay: 3s;
+        }
+        .hidden {
             display: none;
+        }
+        /* Extra easter egg styles */
+        .hidden-clue {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 0.6rem;
+            color: #ff6347;
+            opacity: 0.5;
+            z-index: 1000;
+        }
+        .hidden-clue:hover {
+            opacity: 1;
         }
     </style>
 </head>
@@ -42,9 +63,10 @@
         <h1>Coming Soon...</h1>
         <p class="email">If you have any concerns, please contact <a href="mailto:fortniteballs@nates.gay">fortniteballs@nates.gay</a>.</p>
     </div>
+    <div class="hidden-clue">Did you know? The answer to life is 42.</div>
     <!--
         ************************************************************
-        *      Mysterious Clue: The number of pancakes in space    *
+        *    Mysterious Clue: The number of pancakes in space    *
         *    divided by the square root of the number of apples   *
         *          under a rainbow equals the secret of time.     *
         *                                                        *
@@ -53,6 +75,10 @@
         *                                                        *
         *   If you hear a whistling sound, it might be a hint.   *
         *   Or it could be a kettle. Either way, it’s a mystery.  *
+        *                                                        *
+        *     Also, the universe has a way of making numbers     *
+        *     dance. Look closely at patterns; they might tell   *
+        *     you more than you think.                           *
         ************************************************************
     -->
 </body>
